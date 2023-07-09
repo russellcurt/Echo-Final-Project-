@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+/* zero'd out page sizing */
 * {
   padding: 0;
   margin: 0;
@@ -9,10 +10,58 @@
 body {
   font-family: "Nunito Sans", sans-serif;
   background-image: url("./assets/img/bckimg.png");
+  background-size: cover;
+  font-size: 72px;
 }
 
 #navbar {
   display: flex;
   flex-direction: row;
-  font-size: 28px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container {
+  display: fixed;
+  overflow: hidden;
+}
+
+.navlogo {
+  padding: 2rem 0 2rem 5rem; /* 5 rem is left padding standard*/
+}
+
+.container-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-4 {
+  padding: 2rem;
+}
+
+.navbtn {
+  text-decoration: none;
+  font-size: 24px;
+  color: #f8f8f8;
+}
+
+.signup-btn {
+  font-size: 24px;
+  padding: 1.25rem 2.75rem 1.25rem 2.75rem;
+  border-radius: 21px;
+  background-color: transparent;
+  color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+}
+
+.login-btn {
+  font-size: 24px;
+  padding: 1.25rem 2.75rem 1.25rem 2.75rem;
+  border-radius: 21px;
+  background-color: #d2ceea;
+  color: #1b1e1e;
+  border: 1px solid #1b1e1e;
+  margin-right: 5rem;
 }
