@@ -11,7 +11,6 @@ body {
   font-family: "Nunito Sans", sans-serif;
   background-image: url("./assets/img/bckimg.png");
   background-size: cover;
-  /* font-size: 72px; */
 }
 
 /* start of navbar stylings */
@@ -62,6 +61,7 @@ body {
   margin-right: 5rem;
 }
 
+/* most of the buttons had similar stylings anyway */
 .login-btn,
 #hero > button,
 #join-us > button {
@@ -155,13 +155,14 @@ body {
 
 /* manually adding left and right padding to the section */
 #carousel {
-  padding: 0 5rem 5rem 5rem;
+  padding: 0 5rem 1rem 5rem;
 }
 
 #carousel > h1 {
   font-size: 51px;
   color: #f8f8f8;
   text-align: center;
+  padding-bottom: 4rem;
 }
 
 #carousel > h1 > span {
@@ -198,13 +199,9 @@ body {
   padding: 5rem;
 }
 
-.join-btn {
-  margin: 0;
-}
-
 /* end of join us section */
 
-/* extra button link stylings */
+/* extra button hypertext link stylings */
 .join-btn > a,
 .hero-btn > a,
 .login-btn > a {
