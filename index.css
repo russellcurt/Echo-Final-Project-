@@ -11,9 +11,10 @@ body {
   font-family: "Nunito Sans", sans-serif;
   background-image: url("./assets/img/bckimg.png");
   background-size: cover;
-  font-size: 72px;
+  /* font-size: 72px; */
 }
 
+/* start of navbar stylings */
 #navbar {
   display: flex;
   flex-direction: row;
@@ -30,6 +31,7 @@ body {
   padding: 2rem 0 2rem 5rem; /* 5 rem is left padding standard*/
 }
 
+/* start of non logo item stylings */
 .container-4 {
   display: flex;
   flex-direction: row;
@@ -56,12 +58,87 @@ body {
   border: 1px solid #f8f8f8;
 }
 
-.login-btn {
+.login-btn,
+#hero > button {
   font-size: 24px;
   padding: 1.25rem 2.75rem 1.25rem 2.75rem;
   border-radius: 21px;
-  background-color: #d2ceea;
+  background-color: #d7b9ff;
   color: #1b1e1e;
   border: 1px solid #1b1e1e;
   margin-right: 5rem;
+}
+
+/* end of non logo item stylings */
+/* end of navbar stylings */
+
+/* start of hero stylings */
+#hero {
+  display: block;
+  width: 50%;
+  padding: 5rem 0 20rem 5rem;
+}
+
+#hero > h1 {
+  font-size: 70px;
+  color: #f8f8f8;
+}
+
+#hero > h1 > span {
+  color: #d7b9ff;
+}
+
+#hero > p {
+  font-size: 24px;
+  color: #f8f8f8;
+  padding: 0.5rem 0 3rem 0;
+}
+
+/* end of hero stylings */
+
+/* start of grid stylings */
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rgba(3, 25, 32, 0.75);
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  margin: 5rem;
+  border-radius: 21px;
+}
+
+#grid > div {
+  flex-basis: 50%;
+}
+
+.text-box > h1 {
+  font-size: 51px;
+  color: #f8f8f8;
+  padding-bottom: 2rem;
+}
+
+.text-box > h1 > span {
+  color: #d7b9ff;
+}
+
+.text-box > p {
+  font-size: 24px;
+  color: #f8f8f8;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box > img {
+  width: 80%;
+  height: auto;
+}
+
+.spacing {
+  padding-bottom: 7rem;
 }
