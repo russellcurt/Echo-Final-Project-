@@ -58,15 +58,19 @@ body {
   border: 1px solid #f8f8f8;
 }
 
+.login-btn {
+  margin-right: 5rem;
+}
+
 .login-btn,
-#hero > button {
+#hero > button,
+#join-us > button {
   font-size: 24px;
   padding: 1.25rem 2.75rem 1.25rem 2.75rem;
   border-radius: 21px;
   background-color: #d7b9ff;
   color: #1b1e1e;
   border: 1px solid #1b1e1e;
-  margin-right: 5rem;
 }
 
 /* end of non logo item stylings */
@@ -134,11 +138,81 @@ body {
   align-items: center;
 }
 
+/* resizing img files to better fit flex item containers */
 .img-box > img {
   width: 80%;
   height: auto;
 }
 
+/* added to accommodate for text box size discrepancies */
 .spacing {
   padding-bottom: 7rem;
+}
+
+/* end of grid stylings */
+
+/* start of carousel section stylings */
+
+/* manually adding left and right padding to the section */
+#carousel {
+  padding: 0 5rem 5rem 5rem;
+}
+
+#carousel > h1 {
+  font-size: 51px;
+  color: #f8f8f8;
+  text-align: center;
+}
+
+#carousel > h1 > span {
+  color: #d7b9ff;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* resizing the placeholder images for the cards */
+.carousel-container > div > img {
+  width: 100%;
+  height: auto;
+}
+
+/* end of the carousel section */
+
+/* start of join us section */
+#join-us {
+  font-size: 24px;
+  background-color: rgba(3, 25, 32, 0.75);
+  border-radius: 21px;
+  display: block;
+  text-align: center;
+  margin: 10rem;
+  padding-bottom: 5rem;
+}
+
+#join-us > p {
+  font-style: italic;
+  color: #f8f8f8;
+  padding: 5rem;
+}
+
+.join-btn {
+  margin: 0;
+}
+
+/* end of join us section */
+
+/* extra button link stylings */
+.join-btn > a,
+.hero-btn > a,
+.login-btn > a {
+  text-decoration: none;
+  color: #1b1e1e;
+}
+
+.signup-btn > a {
+  text-decoration: none;
+  color: #f8f8f8;
 }
