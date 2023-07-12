@@ -9,7 +9,7 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  background-image: url("./assets/img/bckimg.png");
+  background-image: url("./assets/img/bckimg2.png");
   background-size: cover;
 }
 
@@ -71,8 +71,8 @@ body {
 
 /* most of the buttons had similar stylings anyway */
 .login-btn,
-#hero > button,
-#join-us > button {
+.hero-btn,
+.join-btn {
   font-size: 24px;
   padding: 1.25rem 2.75rem 1.25rem 2.75rem;
   border-radius: 21px;
@@ -81,8 +81,9 @@ body {
   border: 1px solid #1b1e1e;
 }
 
-.login-btn:hover, #hero > button:hover, #join-us > button:hover {
-  background-color:#A8A8A8;
+.login-btn:hover, .hero-btn:hover, .join-btn:hover {
+  background-color:#1b1e1e;
+  color: #f8f8f8;
 }
 
 /* end of non logo item stylings */
@@ -92,7 +93,7 @@ body {
 #hero {
   display: block;
   width: 50%;
-  padding: 5rem 0 18rem 5rem;
+  padding: 5rem 0 20rem 5rem;
 }
 
 #hero > h1 {
@@ -112,6 +113,14 @@ body {
 
 /* end of hero stylings */
 
+#hand {
+  position: absolute;
+  right: 0%;
+  top: 20%;
+  padding: 0%;
+  margin: 0%;
+}
+
 /* start of grid stylings */
 #grid {
   display: flex;
@@ -121,7 +130,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5rem;
-  margin: 5rem;
+  margin: 2rem 5rem 5rem 5rem;
   border-radius: 21px;
 }
 
@@ -214,14 +223,14 @@ body {
 /* end of join us section */
 
 /* extra button hypertext link stylings */
-.join-btn > a,
-.hero-btn > a,
-.login-btn > a {
+.join-btn,
+.hero-btn,
+.login-btn {
   text-decoration: none;
   color: #1b1e1e;
 }
 
-.signup-btn > a {
+.signup-btn {
   text-decoration: none;
   color: #f8f8f8;
 }
