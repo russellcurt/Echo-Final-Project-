@@ -48,6 +48,10 @@ body {
   color: #f8f8f8;
 }
 
+.navbtn:hover {
+  text-decoration: underline;
+}
+
 .signup-btn {
   font-size: 24px;
   padding: 1.25rem 2.75rem 1.25rem 2.75rem;
@@ -55,6 +59,10 @@ body {
   background-color: transparent;
   color: #f8f8f8;
   border: 1px solid #f8f8f8;
+}
+
+.signup-btn:hover {
+  background-color: #1b1e1e;
 }
 
 .login-btn {
@@ -71,6 +79,10 @@ body {
   background-color: #d7b9ff;
   color: #1b1e1e;
   border: 1px solid #1b1e1e;
+}
+
+.login-btn:hover, #hero > button:hover, #join-us > button:hover {
+  background-color:#A8A8A8;
 }
 
 /* end of non logo item stylings */
@@ -247,6 +259,10 @@ body {
 .footer-bar > div > .footer-text {
   text-decoration: none;
   color: #f8f8f8;
+}
+
+.footer-bar > div > .footer-text:hover {
+  text-decoration: underline;
 }
 
 .socials {
