@@ -1,9 +1,4 @@
 /* Desktop */
-@media screen and (min-width: 1208px) {
-
-}
-
-
 @media screen and (min-width: 1042px) and (max-width: 1207px) {
 .navlogo {
   transform: scale(0.8);
