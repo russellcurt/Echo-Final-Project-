@@ -157,7 +157,7 @@
 #hero {
   display: block;
   width: 50%;
-  padding: 5rem 0 8rem 3rem;
+  padding: 5rem 0 12rem 3rem;
 }
 
 #hero > h1 {
@@ -261,11 +261,15 @@
 }
 }
 
-/* Mobile */
-@media screen and (min-width: 375px) and (max-width: 739px) {
+@media screen and (min-width: 481px) and (max-width: 739px) {
+  #navbar {
+    display: flex;
+    flex-direction:column
+  }
+  
   .navlogo {
     transform: scale(0.7);
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 0rem 0rem;
   }
   
   .login-btn {
@@ -273,7 +277,7 @@
   }
   
   .group-4 {
-    padding: 0rem;
+    padding: 1rem;
   }
   
     .navbtn {
@@ -304,7 +308,7 @@
   
   #hero {
     display: block;
-    width: 87%;
+    width: 50%;
     padding: 3rem 0 0rem 2rem;
   }
   
@@ -321,11 +325,12 @@
   
   #hand {
     position: absolute;
-    right: -87.5%;
-    top: -10%;
+    right: 0%;
+    top: 18rem;
     padding: 0%;
     margin: 0%;  
-    transform: scale(0.28);
+    max-width: 53%;
+    height: auto;
   }
   
   #grid {
@@ -375,7 +380,12 @@
   
   .carousel-container {
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+  }
+
+  .carousel-container > div > img {
+    width: 100%;
+    height: auto;
   }
 
   #join-us {
@@ -394,27 +404,38 @@
     font-size: 1rem;
   }
   
-  .footer-img > a {
-    padding-left: 0%;
-    padding-right: auto;
-    padding-top: 5rem;
+  .footer-img {
+    display: flex;
     transform: scale(0.7);
+
+  }
+
+  .footer-img > a {
+    display: flex;
+    flex-direction: row;
+    padding-left: 37%;
+    padding-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
   
   }
   
   .footer-bar {
     display: flex;
     flex-direction: row;
-    padding-left: 0%;
-    padding-right: auto;
+    justify-content:space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
   
+
+  
   .socials {
     display: flex;
     flex-direction: row;
-    padding-left: 0%;
+    padding-left: 33%;
     padding-right: auto;
     padding-bottom: 5rem;
   }
@@ -422,8 +443,220 @@
   #footer-2 {
     background: #03151b;
     display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    color: #f8f8f8;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+}
+
+/* Mobile */
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  #navbar {
+    display: flex;
     flex-direction:column;
-    justify-content:center;
+    padding-bottom: 1rem;
+    transform: scale(.9);
+  }
+  
+  .navlogo {
+    transform: scale(0.7);
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  
+  .login-btn {
+    margin-right: 0rem;
+  }
+  
+  .group-4 {
+    padding: .53rem;
+  }
+  
+    .navbtn {
+      text-decoration: none;
+      font-size: .875rem;
+      color: #f8f8f8;
+    }
+  
+    .signup-btn {
+      font-size: 0.6rem; /* Reduced font size to 60% */
+      padding: 0.75rem 1.65rem; /* Adjusted padding values for 60% reduction */
+      border-radius: 0.787rem; /* Adjusted border-radius value for 60% reduction */
+      background-color: transparent;
+      color: #f8f8f8;
+      border: 1px solid #f8f8f8;
+    }  
+    
+    .login-btn,
+  .hero-btn,
+  .join-btn {
+    font-size: .6rem;
+    padding: .75rem 1.65rem;
+    border-radius: 0.787rem;
+    background-color: #d7b9ff;
+    color: #1b1e1e;
+    border: 1px solid #1b1e1e;
+  }
+  
+  #hero {
+    display: block;
+    width: 50%;
+    padding: 1rem 0 0rem 1rem;
+    transform: scale(.9);
+  }
+  
+  #hero > h1 {
+    font-size: 2.15rem;
+    color: #f8f8f8;
+  }
+  
+  #hero > p {
+    font-size: 1rem;
+    color: #f8f8f8;
+    padding: 0rem 0 2rem 0;
+  }
+  
+  #hand {
+    position: absolute;
+    right: 0%;
+    top: 18rem;
+    padding: 0%;
+    margin: 0%;  
+    max-width: 60%;
+    height: auto;
+  }
+  
+  #grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(3, 25, 32, 0.75);
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 4rem 0rem 4rem;
+    margin: 0rem 2rem 0rem 2rem;
+    border-radius: 21px;
+    transform: scale(.9);
+  }
+  
+  .text-box > h1 {
+    font-size: 2.15rem;
+    color: #f8f8f8;
+    padding-bottom: 2rem;
+  }
+  
+  .text-box > p {
+    font-size: 1rem;
+    color: #f8f8f8;
+    padding-bottom: 4rem;
+  }
+  
+  .img-box > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+  
+  .spacing {
+    padding-bottom: 0rem;
+  }
+
+  #carousel {
+    padding: 0 2rem 0rem 2rem;
+    transform: scale(.9);
+  }
+  
+  #carousel > h1 {
+    font-size: 2.15rem;
+    color: #f8f8f8;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .carousel-container {
+    display: flex;
+    flex-direction:column;
+    
+  }
+
+  .carousel-container > div > img {
+    width: 100%;
+    height: auto;
+  }
+
+  #join-us {
+    font-size: 1rem;
+    background-color: rgba(3, 25, 32, 0.75);
+    border-radius: 1.313rem;
+    display: block;
+    text-align: center;
+    margin: 2rem;
+    padding-bottom: 3rem;
+    transform: scale(.9);
+  }
+
+  #join-us > p {
+    font-style: italic;
+    color: #f8f8f8;
+    padding: 3rem;
+  }
+  
+  #footer-1 {
+    background: #042630;
+    color: #f8f8f8;
+    font-size: 1rem;
+  }
+  
+  .footer-img {
+    display: flex;
+    transform: scale(0.6);
+    padding-right: 10rem
+
+  }
+
+  .footer-img > a {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+  
+  }
+  
+  .footer-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    transform: scale(0.9);
+  }
+
+  .footer-bar > div {
+    padding: 0rem;
+  }
+
+  
+  .socials {
+    display: flex;
+    flex-direction: row;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 1rem;
+  }
+
+  .socials > div {
+    padding-left: 10%;
+  }
+
+
+  #footer-2 {
+    background: #03151b;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
     color: #f8f8f8;
     padding: 2rem 2rem 2rem 2rem;
   }
